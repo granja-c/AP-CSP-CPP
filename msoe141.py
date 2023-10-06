@@ -9,8 +9,7 @@ def main():
     for i in range(0, len(wrd) - 1):
       if wrd[i] == wrd[i+1]:
         cnt += 1
-
-  print(f"The word '{wrd}' has {cnt} double letters")
+    print(f"The word '{wrd}' has {cnt} double letters")
   pass
 
 if __name__ == "__main__":
