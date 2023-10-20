@@ -1,3 +1,12 @@
 {
-  "files": {}
+  "files": {
+    "bigarry.cpp": [
+      {
+        "id": "2cb4e897-ebc2-4e4f-a65c-e32e06d09929",
+        "line": 12,
+        "version": 101,
+        "index": 212
+      }
+    ]
+  }
 }

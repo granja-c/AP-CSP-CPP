@@ -1,0 +1,14 @@
+mh = 0;
+th = 0;
+wh = 0;
+thh = 0;
+fh = 0;
+sah = 0;
+sh = 0;
+mb = 0;
+tb = 0;
+wb = 0;
+thb = 0;
+fb = 0;
+sab = 0;
+sb = 0;
