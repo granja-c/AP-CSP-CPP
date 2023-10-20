@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdio.h>
 #include <list>
 #include <time.h>
 #include <iterator>
