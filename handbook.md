@@ -66,7 +66,7 @@ ___
 # 1. Compiling and Running
 g++ -o file_name.exe file_name.cpp && ./file_name.exe
 
-compile the file and run it if it does compile
+compile and run it if it does compile
 
 
 
@@ -100,12 +100,12 @@ ___
 # 3. Console I/O
 Input
 ```c++
-std::cin >> var_name;
+cin >> var_name;
 ```
 
 Output
 ```c++
-std::cout << "Text!!" << vars << endl;
+cout << "Text!!" << var << endl;
 ```
 ```c++
 #include <stdio.h>
@@ -183,9 +183,39 @@ ___
 
 
 # 7. Decision Structures
-
-???
-
+if
+```c++
+using namespace std;
+int x = 2;
+if (x < 5) {
+  cout << "yes";
+}
+// yes
+```
+if/else
+```c++
+using namespace std;
+int x = 2;
+if (x < 5) {
+  cout << "yes";
+} else {
+  cout << "no";
+}
+// yes
+```
+else if
+```c++
+using namespace std;
+int x = 2;
+if (x > 5) {
+  cout << "A";
+} else if (x > 1) {
+  cout << "B";
+} else {
+  cout << "C";
+}
+// B
+```
 
 
 
@@ -197,10 +227,16 @@ ___
 
 
 # 8. Conditional Operators
-
-???
-
-
+x = 2;
+y = 5
+|Operator|Desc|Ex.|
+|--|--|--|
+|<|less than|x < y|
+|<=|less than or equal to|x <= y|
+|>|greater than||
+|>=|greater than or equal to||
+|==|is equal to||
+|!=|is not equal to||
 
 
 
@@ -211,10 +247,11 @@ ___
 
 
 # 9. Logic Operators
-
-???
-
-
+|symbol|name|
+|--|--|
+|&&|and|
+|the two lines|or|
+|!|not|
 
 
 
@@ -226,7 +263,34 @@ ___
 
 # 10. Advanced Decision Structures
 
-???
+```c++
+int day = 3;
+switch (day) {
+  case 1:
+    cout << "Monday";
+    break;
+  case 2:
+    cout << "Tuesday";
+    break;
+  case 3:
+    cout << "Wednesday";
+    break;
+  case 4:
+    cout << "Thursday";
+    break;
+  case 5:
+    cout << "Friday";
+    break;
+  case 3:
+    cout << "Saturday";
+    break;
+  case 3:
+    cout << "Sunday";
+    break;
+  default:
+    cout << "Invalid choice." << endl;
+}
+```
 
 
 
@@ -239,15 +303,14 @@ ___
 
 
 # 11. String Methods
-|Operator|Desc|Ex.|
-|--|--|--|
-|size|Returns the length||
-|compare|Compares length of strings||
-|stoi|Converts to integer||
-|stod|Converts to double||
-|substr|Gets a substring from the original (start index, length)||
-|replace|Replaces a portion of teh original with a new word|(start ind, length, word)|
-||||
+|Operator|Desc|
+|--|--|
+|size|Returns the length|
+|compare|Compares length of strings|
+|stoi|Converts to integer|
+|stod|Converts to double|
+|substr|Gets a substring from the original (start index, length)|
+|replace|Replaces a portion of the original with a new word (start ind, length, word)|
 
 
 
@@ -258,8 +321,12 @@ ___
 
 
 # 12. Random Generation
-
-???
+```c++
+#include <time.h>
+srand((unsigned) time(NULL));
+int x = rand() % 20;
+//x will be a number from 0-20 (exclusive)
+```
 
 
 
@@ -272,9 +339,22 @@ ___
 
 
 # 13. Looping Structures
-
-???
-
+while
+```c++
+int x = 5;
+while (x > 0){
+  cout << ":D ";
+  x--;
+}
+//:D :D :D :D :D
+```
+for
+```c++
+for (int lcv = 0; lcv < 5; lcv++){
+  cout << lcv << " ";
+}
+//0 1 2 3 4
+```
 
 
 
@@ -286,9 +366,10 @@ ___
 
 
 # 14. Functions/Methods
-
-???
-
+```c++
+double average(int a, int b, int c, int d, int e) {
+  return (a + b + c + d + e) / 5.0;
+```
 
 
 
@@ -301,15 +382,18 @@ ___
 
 # 15. Elementary Data Structures
 
-???
-
 
 
 
 
 ## 15.1 Arrays/Lists
-
-???
+```c++
+int nums[5] = {1, 2, 3, 4, 5}
+for (int i: nums) {
+  cout << i << " ";
+}
+// 1 2 3 4 5
+```
 
 
 
@@ -317,8 +401,15 @@ ___
 
 
 ## 15.2 Matrices
-
-???
+```c++
+int nums[3][2] = {1, 2, 3, 4, 5, 6};
+for (int i = 0; i < 3; i++) {
+  for (int j = 0; j < 2; j++) {
+    cout << nums[i][j] << "\t";
+  }
+  cout << endl;
+}
+```
 
 
 

@@ -38,7 +38,7 @@ int main() {
   int pchoice, cchoice;
   bool pWin, cWin;
   int turns = 1;
-  cout << "The board:\n0 | 1 | 2\n---------\n3 | 4 | 5\n---------\n6 | 7 | 8" << endl;
+  cout << "The board:\n0 | 1 | 2\n---------\n3 | 4 | 5\n---------\n6 | 7 | 8\nPlayer = X | Computer = O" << endl;
   
   while (turns < 9 && !pWin && !cWin) {
     cout << "Enter a space you'd like to take: ";
