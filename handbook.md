@@ -79,7 +79,6 @@ ___
 
 
 # 2. Data Types
-
 |type|desc|ex|
 |--|--|--|
 |int|Numbers with no decimal- pos or neg, integers|5, -4, 3|
@@ -98,12 +97,12 @@ ___
 
 
 # 3. Console I/O
-Input
+**Input**
 ```c++
 cin >> var_name;
 ```
 
-Output
+**Output**
 ```c++
 cout << "Text!!" << var << endl;
 ```
@@ -183,7 +182,7 @@ ___
 
 
 # 7. Decision Structures
-if
+**if**
 ```c++
 using namespace std;
 int x = 2;
@@ -192,7 +191,7 @@ if (x < 5) {
 }
 // yes
 ```
-if/else
+**if/else**
 ```c++
 using namespace std;
 int x = 2;
@@ -203,7 +202,7 @@ if (x < 5) {
 }
 // yes
 ```
-else if
+**else if**
 ```c++
 using namespace std;
 int x = 2;
@@ -227,16 +226,15 @@ ___
 
 
 # 8. Conditional Operators
-x = 2;
-y = 5
+x = 2; y = 5
 |Operator|Desc|Ex.|
 |--|--|--|
-|<|less than|x < y|
-|<=|less than or equal to|x <= y|
-|>|greater than||
-|>=|greater than or equal to||
-|==|is equal to||
-|!=|is not equal to||
+|<|less than|x < y (true)|
+|<=|less than or equal to|x <= y (true)|
+|>|greater than|x > y (false)|
+|>=|greater than or equal to|x >= y (false)|
+|==|is equal to|x == y (false)|
+|!=|is not equal to|x != y (true)|
 
 
 
@@ -262,7 +260,7 @@ ___
 
 
 # 10. Advanced Decision Structures
-
+**switch**
 ```c++
 int day = 3;
 switch (day) {
@@ -339,7 +337,7 @@ ___
 
 
 # 13. Looping Structures
-while
+**while**
 ```c++
 int x = 5;
 while (x > 0){
@@ -348,7 +346,7 @@ while (x > 0){
 }
 //:D :D :D :D :D
 ```
-for
+**for**
 ```c++
 for (int lcv = 0; lcv < 5; lcv++){
   cout << lcv << " ";
@@ -409,6 +407,11 @@ for (int i = 0; i < 3; i++) {
   }
   cout << endl;
 }
+/*
+1  2  
+3  4
+5  6  
+*/
 ```
 
 
