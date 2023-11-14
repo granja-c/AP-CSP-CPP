@@ -353,7 +353,13 @@ for (int lcv = 0; lcv < 5; lcv++){
 }
 //0 1 2 3 4
 ```
-
+**for-each**
+```c++
+for (int item : lst){
+  cout << item << " ";
+}
+cout << endl;
+```
 
 
 
