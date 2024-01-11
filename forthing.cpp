@@ -2,5 +2,6 @@
 using namespace std;
 
 int main() {
-  cout << "Hello!";
+  int lol[] = {1, 2, 3, 4};
+  cout << lol[5];
 }
