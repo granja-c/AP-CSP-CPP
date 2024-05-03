@@ -24,6 +24,26 @@ class TestQuicksort(unittest.TestCase):
     expected_output = []
     self.assertEqual(QuickSort.sort(input), expected_output)
 
+  def test_single_element(self):
+    input = [1]
+    expected_output = [1]
+    self.assertEqual(QuickSort.sort(input), expected_output)
+
+  def test_identical_elements(self):
+    input = [5, 5, 5, 5]
+    expected_output = [5, 5, 5, 5]
+    self.assertEqual(QuickSort.sort(input), expected_output)
+
+  def test_negative_numbers(self):
+    input = [-3, -1, -4, -2]
+    expected_output = [-4, -3, -2, -1]
+    self.assertEqual(QuickSort.sort(input), expected_output)
+
+  def test_mixed_types(self):
+    input = [3.2, 1.5, 4.8, 2.1]
+    expected_output = [1.5, 2.1, 3.2, 4.8]
+    self.assertEqual(QuickSort.sort(input), expected_output)
+    
   def test_perf_large_dataset(self):
     input = gen_large_list()
     start_time = current_time()
